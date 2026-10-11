@@ -1,0 +1,297 @@
+{
+  "language": "english",
+  "dataset": "WELFake",
+  "csv_path": "C:\\Users\\Lenovo\\Downloads\\FakeNewsDetection\\datasets\\raw\\english\\WELFake_Dataset.csv",
+  "raw_files_modified": false,
+  "columns": [
+    "",
+    "title",
+    "text",
+    "label"
+  ],
+  "unnamed_index_column_present": true,
+  "parsed_records": 72134,
+  "label_counts": {
+    "1": 37106,
+    "0": 35028
+  },
+  "missing_or_blank": {
+    "title": 558,
+    "text": 783,
+    "label": 0
+  },
+  "unexpected_labels": {},
+  "short_text_under_chars": {
+    "threshold": 50,
+    "count": 345
+  },
+  "rows_containing_url": 4532,
+  "latin_heavy_rows": 71138,
+  "unique_normalized_texts": 62702,
+  "duplicate_groups": 7731,
+  "extra_duplicate_copies": 8649,
+  "conflicting_label_groups": 0,
+  "label_mapping_status": "unverified",
+  "label_mapping_note": "Do not treat 0/1 as fake/real until reports/welfake_label_mapping.md is confirmed by a human. Published counts and the 0/1 legend disagree.",
+  "samples": {
+    "0": [
+      {
+        "original_id": "3",
+        "title_chars": 105,
+        "text_chars": 250,
+        "label": "0"
+      },
+      {
+        "original_id": "11",
+        "title_chars": 61,
+        "text_chars": 250,
+        "label": "0"
+      },
+      {
+        "original_id": "12",
+        "title_chars": 72,
+        "text_chars": 250,
+        "label": "0"
+      },
+      {
+        "original_id": "14",
+        "title_chars": 88,
+        "text_chars": 250,
+        "label": "0"
+      },
+      {
+        "original_id": "15",
+        "title_chars": 64,
+        "text_chars": 250,
+        "label": "0"
+      }
+    ],
+    "1": [
+      {
+        "original_id": "0",
+        "title_chars": 130,
+        "text_chars": 250,
+        "label": "1"
+      },
+      {
+        "original_id": "1",
+        "title_chars": 0,
+        "text_chars": 46,
+        "label": "1"
+      },
+      {
+        "original_id": "2",
+        "title_chars": 137,
+        "text_chars": 215,
+        "label": "1"
+      },
+      {
+        "original_id": "4",
+        "title_chars": 95,
+        "text_chars": 250,
+        "label": "1"
+      },
+      {
+        "original_id": "5",
+        "title_chars": 78,
+        "text_chars": 250,
+        "label": "1"
+      }
+    ]
+  },
+  "examples": {
+    "largest_duplicate_groups": [
+      {
+        "sha256": "cdc2d9bb4c0a10168e0eefbb7150b0108f3a2ad4a5cb9c467ed0e27c8f9696a7",
+        "count": 58,
+        "labels": [
+          "0"
+        ],
+        "original_ids": [
+          "552",
+          "630",
+          "2421",
+          "3092",
+          "3186",
+          "3653",
+          "5596",
+          "7122",
+          "7435",
+          "8554"
+        ]
+      },
+      {
+        "sha256": "dfe5194ea1fbdd8e5028803919438351ce1c1b40f3efac01e4a388fff5840386",
+        "count": 38,
+        "labels": [
+          "1"
+        ],
+        "original_ids": [
+          "216",
+          "5694",
+          "6097",
+          "6567",
+          "7306",
+          "7396",
+          "8643",
+          "11786",
+          "12676",
+          "13872"
+        ]
+      },
+      {
+        "sha256": "d663379b9e1733533da0d988d4fff4bf91f2d44278e42a36b19eec1a35ff5b08",
+        "count": 36,
+        "labels": [
+          "1"
+        ],
+        "original_ids": [
+          "1352",
+          "3234",
+          "3456",
+          "6250",
+          "7097",
+          "7841",
+          "8347",
+          "10154",
+          "10937",
+          "15583"
+        ]
+      },
+      {
+        "sha256": "76fa10a5bd5db91732b55c3629cfe306a9c0f4c4a7287c89f822f94d90b251ab",
+        "count": 33,
+        "labels": [
+          "1"
+        ],
+        "original_ids": [
+          "244",
+          "2315",
+          "3601",
+          "8680",
+          "14157",
+          "20142",
+          "22350",
+          "24103",
+          "26909",
+          "30504"
+        ]
+      },
+      {
+        "sha256": "3d8259b125484f6323089303c151d465cc202c57c2e5817af8e2be9222b42e3a",
+        "count": 23,
+        "labels": [
+          "0"
+        ],
+        "original_ids": [
+          "1546",
+          "7829",
+          "9700",
+          "9775",
+          "10063",
+          "11702",
+          "13899",
+          "19305",
+          "21876",
+          "23267"
+        ]
+      },
+      {
+        "sha256": "01c65291a534d1b228024d42ab4db0c54c9fe6f59a2b07ce378be9a54ed5efb0",
+        "count": 18,
+        "labels": [
+          "1"
+        ],
+        "original_ids": [
+          "4949",
+          "5247",
+          "7117",
+          "7513",
+          "12058",
+          "13284",
+          "16160",
+          "17099",
+          "17446",
+          "23717"
+        ]
+      },
+      {
+        "sha256": "6e02c5befe46e4fdf2973831f8140367b81dad9732588153d8a31b31e3744f70",
+        "count": 17,
+        "labels": [
+          "0"
+        ],
+        "original_ids": [
+          "2112",
+          "6471",
+          "17678",
+          "20751",
+          "25377",
+          "26312",
+          "40163",
+          "44245",
+          "49236",
+          "51712"
+        ]
+      },
+      {
+        "sha256": "4d76547507ba8b58376764e5fe03aed47eb1e02815a0ad16c4f9bac414000011",
+        "count": 13,
+        "labels": [
+          "1"
+        ],
+        "original_ids": [
+          "8788",
+          "13101",
+          "23205",
+          "24670",
+          "25568",
+          "29921",
+          "34904",
+          "36109",
+          "48360",
+          "60832"
+        ]
+      },
+      {
+        "sha256": "adaf754d06462cce171561020339915a0aa607d8b1d136583c87261081081ce5",
+        "count": 12,
+        "labels": [
+          "0"
+        ],
+        "original_ids": [
+          "3930",
+          "7191",
+          "8676",
+          "8727",
+          "13453",
+          "13700",
+          "31982",
+          "40455",
+          "58715",
+          "59075"
+        ]
+      },
+      {
+        "sha256": "f03706e11fb2ae1fdd3516a8cf4d3dec3cef7e04276a100fbfbab5346ae2bd37",
+        "count": 12,
+        "labels": [
+          "0"
+        ],
+        "original_ids": [
+          "10231",
+          "14458",
+          "16977",
+          "20792",
+          "28386",
+          "29589",
+          "33671",
+          "34583",
+          "51753",
+          "54854"
+        ]
+      }
+    ],
+    "conflicting_label_groups": []
+  }
+}

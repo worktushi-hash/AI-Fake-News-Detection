@@ -1,0 +1,470 @@
+{
+  "language": "hindi",
+  "raw_root": "C:\\Users\\Lenovo\\Downloads\\FakeNewsDetection\\datasets\\raw\\hindi",
+  "raw_files_modified": false,
+  "artifact_files_skipped": 20595,
+  "article_txt_files": 20593,
+  "folder_label_counts": {
+    "fake": 10293,
+    "real": 10300
+  },
+  "encoding_counts": {
+    "utf-8-sig": 20593
+  },
+  "extension_counts": {
+    ".txt": 20593
+  },
+  "empty_files": 0,
+  "short_files_under_chars": {
+    "threshold": 50,
+    "count": 440
+  },
+  "unknown_label_files": 0,
+  "replacement_decodes": 0,
+  "files_containing_url": 197,
+  "low_devanagari_files": 22,
+  "unique_normalized_texts": 15052,
+  "duplicate_groups": 2838,
+  "extra_duplicate_copies": 5541,
+  "conflicting_label_groups": 2,
+  "bytes_in_article_files": 193146201,
+  "chars_in_non_empty_articles": 75586137,
+  "notes": [
+    "Folder names are treated as claimed labels, not verified ground truth.",
+    "Hindi and Marathi both use Devanagari; script ratio is not a language ID.",
+    "Exact-hash duplicates do not prove that near-duplicates or leakage are absent.",
+    "__MACOSX and ._* files are OS artifacts and were not counted as articles."
+  ],
+  "examples": {
+    "empty": [],
+    "short": [
+      "Hindi_fake_news/Hindi_fake_news (2434).txt",
+      "Hindi_fake_news/Hindi_fake_news (2435).txt",
+      "Hindi_fake_news/Hindi_fake_news (2446).txt",
+      "Hindi_fake_news/Hindi_fake_news (2447).txt",
+      "Hindi_fake_news/Hindi_fake_news (2512).txt",
+      "Hindi_fake_news/Hindi_fake_news (2513).txt",
+      "Hindi_fake_news/Hindi_fake_news (2578).txt",
+      "Hindi_fake_news/Hindi_fake_news (2579).txt",
+      "Hindi_fake_news/Hindi_fake_news (2634).txt",
+      "Hindi_fake_news/Hindi_fake_news (2635).txt",
+      "Hindi_fake_news/Hindi_fake_news (2650).txt",
+      "Hindi_fake_news/Hindi_fake_news (2651).txt",
+      "Hindi_fake_news/Hindi_fake_news (2652).txt",
+      "Hindi_fake_news/Hindi_fake_news (2653).txt",
+      "Hindi_fake_news/Hindi_fake_news (2658).txt"
+    ],
+    "unknown_label": [],
+    "replacement_decode": [],
+    "non_txt": [],
+    "low_devanagari": [
+      "Hindi_fake_news/Hindi_fake_news (2754).txt",
+      "Hindi_fake_news/Hindi_fake_news (2755).txt",
+      "Hindi_fake_news/Hindi_fake_news (2830).txt",
+      "Hindi_fake_news/Hindi_fake_news (2831).txt",
+      "Hindi_fake_news/Hindi_fake_news (2862).txt",
+      "Hindi_fake_news/Hindi_fake_news (2863).txt",
+      "Hindi_fake_news/Hindi_fake_news (2916).txt",
+      "Hindi_fake_news/Hindi_fake_news (2917).txt",
+      "Hindi_fake_news/Hindi_fake_news (2948).txt",
+      "Hindi_fake_news/Hindi_fake_news (2949).txt",
+      "Hindi_fake_news/Hindi_fake_news (3030).txt",
+      "Hindi_fake_news/Hindi_fake_news (3031).txt",
+      "Hindi_fake_news/Hindi_fake_news (3238).txt",
+      "Hindi_fake_news/Hindi_fake_news (3239).txt",
+      "Hindi_fake_news/Hindi_fake_news (3456).txt"
+    ],
+    "largest_duplicate_groups": [
+      {
+        "sha256": "a77dd83d3395d2d2cbce6309cff09be246cc5bc95621f1f5d1d0f5bb40ba55f6",
+        "count": 338,
+        "labels": [
+          "fake"
+        ],
+        "paths": [
+          "Hindi_fake_news/Hindi_fake_news (2434).txt",
+          "Hindi_fake_news/Hindi_fake_news (2435).txt",
+          "Hindi_fake_news/Hindi_fake_news (2446).txt",
+          "Hindi_fake_news/Hindi_fake_news (2447).txt",
+          "Hindi_fake_news/Hindi_fake_news (2512).txt",
+          "Hindi_fake_news/Hindi_fake_news (2513).txt",
+          "Hindi_fake_news/Hindi_fake_news (2578).txt",
+          "Hindi_fake_news/Hindi_fake_news (2579).txt",
+          "Hindi_fake_news/Hindi_fake_news (2634).txt",
+          "Hindi_fake_news/Hindi_fake_news (2635).txt",
+          "Hindi_fake_news/Hindi_fake_news (2650).txt",
+          "Hindi_fake_news/Hindi_fake_news (2651).txt",
+          "Hindi_fake_news/Hindi_fake_news (2652).txt",
+          "Hindi_fake_news/Hindi_fake_news (2653).txt",
+          "Hindi_fake_news/Hindi_fake_news (2658).txt"
+        ]
+      },
+      {
+        "sha256": "f95948a78d0767a381056a558d791f071473febe661a039946cae6aad8a7deae",
+        "count": 66,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Hindi_real_news/Hindi_real_news (4014).txt",
+          "Hindi_real_news/Hindi_real_news (4040).txt",
+          "Hindi_real_news/Hindi_real_news (4046).txt",
+          "Hindi_real_news/Hindi_real_news (4066).txt",
+          "Hindi_real_news/Hindi_real_news (4093).txt",
+          "Hindi_real_news/Hindi_real_news (4120).txt",
+          "Hindi_real_news/Hindi_real_news (4147).txt",
+          "Hindi_real_news/Hindi_real_news (4173).txt",
+          "Hindi_real_news/Hindi_real_news (4199).txt",
+          "Hindi_real_news/Hindi_real_news (4227).txt",
+          "Hindi_real_news/Hindi_real_news (4253).txt",
+          "Hindi_real_news/Hindi_real_news (4280).txt",
+          "Hindi_real_news/Hindi_real_news (4306).txt",
+          "Hindi_real_news/Hindi_real_news (4312).txt",
+          "Hindi_real_news/Hindi_real_news (4332).txt"
+        ]
+      },
+      {
+        "sha256": "1649d73d89d48d55b94583ea46f86413445c76cc40ade6d6f2358a324abe3160",
+        "count": 66,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Hindi_real_news/Hindi_real_news (4020).txt",
+          "Hindi_real_news/Hindi_real_news (4047).txt",
+          "Hindi_real_news/Hindi_real_news (4073).txt",
+          "Hindi_real_news/Hindi_real_news (4099).txt",
+          "Hindi_real_news/Hindi_real_news (4113).txt",
+          "Hindi_real_news/Hindi_real_news (4127).txt",
+          "Hindi_real_news/Hindi_real_news (4153).txt",
+          "Hindi_real_news/Hindi_real_news (4180).txt",
+          "Hindi_real_news/Hindi_real_news (4206).txt",
+          "Hindi_real_news/Hindi_real_news (4233).txt",
+          "Hindi_real_news/Hindi_real_news (4260).txt",
+          "Hindi_real_news/Hindi_real_news (4286).txt",
+          "Hindi_real_news/Hindi_real_news (4313).txt",
+          "Hindi_real_news/Hindi_real_news (4340).txt",
+          "Hindi_real_news/Hindi_real_news (4366).txt"
+        ]
+      },
+      {
+        "sha256": "d7379cdbd2c08680a9d8945cb4b7b703179a57b5a30f647f1dc90752796f3518",
+        "count": 66,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Hindi_real_news/Hindi_real_news (4023).txt",
+          "Hindi_real_news/Hindi_real_news (4050).txt",
+          "Hindi_real_news/Hindi_real_news (4076).txt",
+          "Hindi_real_news/Hindi_real_news (4103).txt",
+          "Hindi_real_news/Hindi_real_news (4130).txt",
+          "Hindi_real_news/Hindi_real_news (4146).txt",
+          "Hindi_real_news/Hindi_real_news (4156).txt",
+          "Hindi_real_news/Hindi_real_news (4183).txt",
+          "Hindi_real_news/Hindi_real_news (4209).txt",
+          "Hindi_real_news/Hindi_real_news (4237).txt",
+          "Hindi_real_news/Hindi_real_news (4263).txt",
+          "Hindi_real_news/Hindi_real_news (4289).txt",
+          "Hindi_real_news/Hindi_real_news (4316).txt",
+          "Hindi_real_news/Hindi_real_news (4343).txt",
+          "Hindi_real_news/Hindi_real_news (4370).txt"
+        ]
+      },
+      {
+        "sha256": "8da5facbab7bf992466a9fa7c33ec415698360f3cf16bf049bb40a0055d6121c",
+        "count": 35,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Hindi_real_news/Hindi_real_news (5001).txt",
+          "Hindi_real_news/Hindi_real_news (5026).txt",
+          "Hindi_real_news/Hindi_real_news (5052).txt",
+          "Hindi_real_news/Hindi_real_news (5078).txt",
+          "Hindi_real_news/Hindi_real_news (5105).txt",
+          "Hindi_real_news/Hindi_real_news (5132).txt",
+          "Hindi_real_news/Hindi_real_news (5159).txt",
+          "Hindi_real_news/Hindi_real_news (5168).txt",
+          "Hindi_real_news/Hindi_real_news (5185).txt",
+          "Hindi_real_news/Hindi_real_news (5211).txt",
+          "Hindi_real_news/Hindi_real_news (5239).txt",
+          "Hindi_real_news/Hindi_real_news (5265).txt",
+          "Hindi_real_news/Hindi_real_news (5292).txt",
+          "Hindi_real_news/Hindi_real_news (5318).txt",
+          "Hindi_real_news/Hindi_real_news (5345).txt"
+        ]
+      },
+      {
+        "sha256": "05c1a4ea322ccf2e8d47a983e5af0a6d02852db925a039a18a64847dcef8bb7a",
+        "count": 35,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Hindi_real_news/Hindi_real_news (5002).txt",
+          "Hindi_real_news/Hindi_real_news (5009).txt",
+          "Hindi_real_news/Hindi_real_news (5036).txt",
+          "Hindi_real_news/Hindi_real_news (5062).txt",
+          "Hindi_real_news/Hindi_real_news (5088).txt",
+          "Hindi_real_news/Hindi_real_news (5116).txt",
+          "Hindi_real_news/Hindi_real_news (5142).txt",
+          "Hindi_real_news/Hindi_real_news (5169).txt",
+          "Hindi_real_news/Hindi_real_news (5195).txt",
+          "Hindi_real_news/Hindi_real_news (5221).txt",
+          "Hindi_real_news/Hindi_real_news (5249).txt",
+          "Hindi_real_news/Hindi_real_news (5268).txt",
+          "Hindi_real_news/Hindi_real_news (5275).txt",
+          "Hindi_real_news/Hindi_real_news (5302).txt",
+          "Hindi_real_news/Hindi_real_news (5328).txt"
+        ]
+      },
+      {
+        "sha256": "ac82b3d85145f26faa8d9b34fa222f01a8a86e3b023a67b9e1d59fcc9a1b8a1d",
+        "count": 35,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Hindi_real_news/Hindi_real_news (5003).txt",
+          "Hindi_real_news/Hindi_real_news (5029).txt",
+          "Hindi_real_news/Hindi_real_news (5055).txt",
+          "Hindi_real_news/Hindi_real_news (5082).txt",
+          "Hindi_real_news/Hindi_real_news (5108).txt",
+          "Hindi_real_news/Hindi_real_news (5136).txt",
+          "Hindi_real_news/Hindi_real_news (5162).txt",
+          "Hindi_real_news/Hindi_real_news (5188).txt",
+          "Hindi_real_news/Hindi_real_news (5201).txt",
+          "Hindi_real_news/Hindi_real_news (5215).txt",
+          "Hindi_real_news/Hindi_real_news (5242).txt",
+          "Hindi_real_news/Hindi_real_news (5269).txt",
+          "Hindi_real_news/Hindi_real_news (5295).txt",
+          "Hindi_real_news/Hindi_real_news (5321).txt",
+          "Hindi_real_news/Hindi_real_news (5334).txt"
+        ]
+      },
+      {
+        "sha256": "d0af808cfd7298d8fb54ea4b9a95a72e3aaeca13deb13cc1ea521f3f403f12e8",
+        "count": 35,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Hindi_real_news/Hindi_real_news (5004).txt",
+          "Hindi_real_news/Hindi_real_news (5030).txt",
+          "Hindi_real_news/Hindi_real_news (5056).txt",
+          "Hindi_real_news/Hindi_real_news (5083).txt",
+          "Hindi_real_news/Hindi_real_news (5109).txt",
+          "Hindi_real_news/Hindi_real_news (5137).txt",
+          "Hindi_real_news/Hindi_real_news (5163).txt",
+          "Hindi_real_news/Hindi_real_news (5189).txt",
+          "Hindi_real_news/Hindi_real_news (5212).txt",
+          "Hindi_real_news/Hindi_real_news (5216).txt",
+          "Hindi_real_news/Hindi_real_news (5243).txt",
+          "Hindi_real_news/Hindi_real_news (5270).txt",
+          "Hindi_real_news/Hindi_real_news (5296).txt",
+          "Hindi_real_news/Hindi_real_news (5322).txt",
+          "Hindi_real_news/Hindi_real_news (5350).txt"
+        ]
+      },
+      {
+        "sha256": "288d46fc4d70baff26ecb84b5ab9a4048a850ff73ad03cae0332a03619fc93a5",
+        "count": 35,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Hindi_real_news/Hindi_real_news (5005).txt",
+          "Hindi_real_news/Hindi_real_news (5031).txt",
+          "Hindi_real_news/Hindi_real_news (5058).txt",
+          "Hindi_real_news/Hindi_real_news (5084).txt",
+          "Hindi_real_news/Hindi_real_news (5110).txt",
+          "Hindi_real_news/Hindi_real_news (5138).txt",
+          "Hindi_real_news/Hindi_real_news (5164).txt",
+          "Hindi_real_news/Hindi_real_news (5191).txt",
+          "Hindi_real_news/Hindi_real_news (5217).txt",
+          "Hindi_real_news/Hindi_real_news (5224).txt",
+          "Hindi_real_news/Hindi_real_news (5244).txt",
+          "Hindi_real_news/Hindi_real_news (5271).txt",
+          "Hindi_real_news/Hindi_real_news (5297).txt",
+          "Hindi_real_news/Hindi_real_news (5324).txt",
+          "Hindi_real_news/Hindi_real_news (5351).txt"
+        ]
+      },
+      {
+        "sha256": "0108e185b41f961173d5e3ded7851d4d80948c67a66694f3eb9fec25f12a45d8",
+        "count": 35,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Hindi_real_news/Hindi_real_news (5006).txt",
+          "Hindi_real_news/Hindi_real_news (5032).txt",
+          "Hindi_real_news/Hindi_real_news (5059).txt",
+          "Hindi_real_news/Hindi_real_news (5085).txt",
+          "Hindi_real_news/Hindi_real_news (5111).txt",
+          "Hindi_real_news/Hindi_real_news (5139).txt",
+          "Hindi_real_news/Hindi_real_news (5165).txt",
+          "Hindi_real_news/Hindi_real_news (5192).txt",
+          "Hindi_real_news/Hindi_real_news (5218).txt",
+          "Hindi_real_news/Hindi_real_news (5235).txt",
+          "Hindi_real_news/Hindi_real_news (5245).txt",
+          "Hindi_real_news/Hindi_real_news (5272).txt",
+          "Hindi_real_news/Hindi_real_news (5298).txt",
+          "Hindi_real_news/Hindi_real_news (5325).txt",
+          "Hindi_real_news/Hindi_real_news (5352).txt"
+        ]
+      },
+      {
+        "sha256": "b348b2571a9d28a3f9f9e5315b25779bb6da7fbdde77d9c3e7827677b2b5512d",
+        "count": 35,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Hindi_real_news/Hindi_real_news (5007).txt",
+          "Hindi_real_news/Hindi_real_news (5033).txt",
+          "Hindi_real_news/Hindi_real_news (5060).txt",
+          "Hindi_real_news/Hindi_real_news (5086).txt",
+          "Hindi_real_news/Hindi_real_news (5114).txt",
+          "Hindi_real_news/Hindi_real_news (5140).txt",
+          "Hindi_real_news/Hindi_real_news (5166).txt",
+          "Hindi_real_news/Hindi_real_news (5193).txt",
+          "Hindi_real_news/Hindi_real_news (5219).txt",
+          "Hindi_real_news/Hindi_real_news (5246).txt",
+          "Hindi_real_news/Hindi_real_news (5247).txt",
+          "Hindi_real_news/Hindi_real_news (5273).txt",
+          "Hindi_real_news/Hindi_real_news (5299).txt",
+          "Hindi_real_news/Hindi_real_news (5326).txt",
+          "Hindi_real_news/Hindi_real_news (5353).txt"
+        ]
+      },
+      {
+        "sha256": "abc902764fb82ae002300e017b06144b98ed8c01bfb786da42e06c083bb1b020",
+        "count": 35,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Hindi_real_news/Hindi_real_news (5010).txt",
+          "Hindi_real_news/Hindi_real_news (5013).txt",
+          "Hindi_real_news/Hindi_real_news (5037).txt",
+          "Hindi_real_news/Hindi_real_news (5063).txt",
+          "Hindi_real_news/Hindi_real_news (5089).txt",
+          "Hindi_real_news/Hindi_real_news (5117).txt",
+          "Hindi_real_news/Hindi_real_news (5143).txt",
+          "Hindi_real_news/Hindi_real_news (5170).txt",
+          "Hindi_real_news/Hindi_real_news (5196).txt",
+          "Hindi_real_news/Hindi_real_news (5222).txt",
+          "Hindi_real_news/Hindi_real_news (5250).txt",
+          "Hindi_real_news/Hindi_real_news (5276).txt",
+          "Hindi_real_news/Hindi_real_news (5279).txt",
+          "Hindi_real_news/Hindi_real_news (5303).txt",
+          "Hindi_real_news/Hindi_real_news (5329).txt"
+        ]
+      },
+      {
+        "sha256": "5766c1fd6d3220ee7e96b3ac265e6985be63a8cbaf2f5d942a90b8e03168b8ae",
+        "count": 35,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Hindi_real_news/Hindi_real_news (5011).txt",
+          "Hindi_real_news/Hindi_real_news (5024).txt",
+          "Hindi_real_news/Hindi_real_news (5038).txt",
+          "Hindi_real_news/Hindi_real_news (5064).txt",
+          "Hindi_real_news/Hindi_real_news (5091).txt",
+          "Hindi_real_news/Hindi_real_news (5118).txt",
+          "Hindi_real_news/Hindi_real_news (5144).txt",
+          "Hindi_real_news/Hindi_real_news (5171).txt",
+          "Hindi_real_news/Hindi_real_news (5197).txt",
+          "Hindi_real_news/Hindi_real_news (5225).txt",
+          "Hindi_real_news/Hindi_real_news (5251).txt",
+          "Hindi_real_news/Hindi_real_news (5277).txt",
+          "Hindi_real_news/Hindi_real_news (5290).txt",
+          "Hindi_real_news/Hindi_real_news (5304).txt",
+          "Hindi_real_news/Hindi_real_news (5330).txt"
+        ]
+      },
+      {
+        "sha256": "5264710af05d498378186725832275fb2e7c2137e7647a06a34792ea95eff3c6",
+        "count": 35,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Hindi_real_news/Hindi_real_news (5014).txt",
+          "Hindi_real_news/Hindi_real_news (5040).txt",
+          "Hindi_real_news/Hindi_real_news (5046).txt",
+          "Hindi_real_news/Hindi_real_news (5066).txt",
+          "Hindi_real_news/Hindi_real_news (5093).txt",
+          "Hindi_real_news/Hindi_real_news (5120).txt",
+          "Hindi_real_news/Hindi_real_news (5147).txt",
+          "Hindi_real_news/Hindi_real_news (5173).txt",
+          "Hindi_real_news/Hindi_real_news (5199).txt",
+          "Hindi_real_news/Hindi_real_news (5227).txt",
+          "Hindi_real_news/Hindi_real_news (5253).txt",
+          "Hindi_real_news/Hindi_real_news (5280).txt",
+          "Hindi_real_news/Hindi_real_news (5306).txt",
+          "Hindi_real_news/Hindi_real_news (5312).txt",
+          "Hindi_real_news/Hindi_real_news (5332).txt"
+        ]
+      },
+      {
+        "sha256": "aa250b2b976775641496aec8b70a81689ddb989e2981ad290d9e58ee6f703641",
+        "count": 35,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Hindi_real_news/Hindi_real_news (5016).txt",
+          "Hindi_real_news/Hindi_real_news (5042).txt",
+          "Hindi_real_news/Hindi_real_news (5068).txt",
+          "Hindi_real_news/Hindi_real_news (5069).txt",
+          "Hindi_real_news/Hindi_real_news (5095).txt",
+          "Hindi_real_news/Hindi_real_news (5122).txt",
+          "Hindi_real_news/Hindi_real_news (5149).txt",
+          "Hindi_real_news/Hindi_real_news (5175).txt",
+          "Hindi_real_news/Hindi_real_news (5202).txt",
+          "Hindi_real_news/Hindi_real_news (5229).txt",
+          "Hindi_real_news/Hindi_real_news (5255).txt",
+          "Hindi_real_news/Hindi_real_news (5282).txt",
+          "Hindi_real_news/Hindi_real_news (5308).txt",
+          "Hindi_real_news/Hindi_real_news (5335).txt",
+          "Hindi_real_news/Hindi_real_news (5336).txt"
+        ]
+      }
+    ],
+    "conflicting_label_groups": [
+      {
+        "sha256": "415f75b77451c301644a0df1818912dfefe50cc9c7517fd96e745b371a0b038e",
+        "count": 2,
+        "labels": [
+          "fake",
+          "real"
+        ],
+        "paths": [
+          "Hindi_fake_news/Hindi_fake_news (10202).txt",
+          "Hindi_real_news/Hindi_real_news (7403).txt"
+        ]
+      },
+      {
+        "sha256": "1dbdcab3eb0417b4862a897035405d15321fafdb6862925c2982c549b2337154",
+        "count": 2,
+        "labels": [
+          "fake",
+          "real"
+        ],
+        "paths": [
+          "Hindi_fake_news/Hindi_fake_news (10203).txt",
+          "Hindi_real_news/Hindi_real_news (7409).txt"
+        ]
+      }
+    ]
+  },
+  "issue_counts": {
+    "short": 440,
+    "low_devanagari": 22
+  }
+}

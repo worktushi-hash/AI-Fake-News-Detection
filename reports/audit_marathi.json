@@ -1,0 +1,428 @@
+{
+  "language": "marathi",
+  "raw_root": "C:\\Users\\Lenovo\\Downloads\\FakeNewsDetection\\datasets\\raw\\marathi",
+  "raw_files_modified": false,
+  "artifact_files_skipped": 18698,
+  "article_txt_files": 18696,
+  "folder_label_counts": {
+    "fake": 8696,
+    "real": 10000
+  },
+  "encoding_counts": {
+    "utf-8-sig": 18696
+  },
+  "extension_counts": {
+    ".txt": 18696
+  },
+  "empty_files": 0,
+  "short_files_under_chars": {
+    "threshold": 50,
+    "count": 341
+  },
+  "unknown_label_files": 0,
+  "replacement_decodes": 0,
+  "files_containing_url": 87,
+  "low_devanagari_files": 0,
+  "unique_normalized_texts": 8122,
+  "duplicate_groups": 1649,
+  "extra_duplicate_copies": 10574,
+  "conflicting_label_groups": 0,
+  "bytes_in_article_files": 139111353,
+  "chars_in_non_empty_articles": 52274691,
+  "notes": [
+    "Folder names are treated as claimed labels, not verified ground truth.",
+    "Hindi and Marathi both use Devanagari; script ratio is not a language ID.",
+    "Exact-hash duplicates do not prove that near-duplicates or leakage are absent.",
+    "__MACOSX and ._* files are OS artifacts and were not counted as articles."
+  ],
+  "examples": {
+    "empty": [],
+    "short": [
+      "Marathi_fake_news/Marathi_fake_news (11).txt",
+      "Marathi_fake_news/Marathi_fake_news (12).txt",
+      "Marathi_fake_news/Marathi_fake_news (15).txt",
+      "Marathi_fake_news/Marathi_fake_news (16).txt",
+      "Marathi_fake_news/Marathi_fake_news (21).txt",
+      "Marathi_fake_news/Marathi_fake_news (22).txt",
+      "Marathi_fake_news/Marathi_fake_news (25).txt",
+      "Marathi_fake_news/Marathi_fake_news (26).txt",
+      "Marathi_fake_news/Marathi_fake_news (35).txt",
+      "Marathi_fake_news/Marathi_fake_news (36).txt",
+      "Marathi_fake_news/Marathi_fake_news (37).txt",
+      "Marathi_fake_news/Marathi_fake_news (38).txt",
+      "Marathi_fake_news/Marathi_fake_news (39).txt",
+      "Marathi_fake_news/Marathi_fake_news (40).txt",
+      "Marathi_fake_news/Marathi_fake_news (4297).txt"
+    ],
+    "unknown_label": [],
+    "replacement_decode": [],
+    "non_txt": [],
+    "low_devanagari": [],
+    "largest_duplicate_groups": [
+      {
+        "sha256": "96053de72a90ba78c11b823a22a9f23f3040c73b0f88178cc0aa363850e581d5",
+        "count": 338,
+        "labels": [
+          "fake"
+        ],
+        "paths": [
+          "Marathi_fake_news/Marathi_fake_news (11).txt",
+          "Marathi_fake_news/Marathi_fake_news (12).txt",
+          "Marathi_fake_news/Marathi_fake_news (15).txt",
+          "Marathi_fake_news/Marathi_fake_news (16).txt",
+          "Marathi_fake_news/Marathi_fake_news (21).txt",
+          "Marathi_fake_news/Marathi_fake_news (22).txt",
+          "Marathi_fake_news/Marathi_fake_news (25).txt",
+          "Marathi_fake_news/Marathi_fake_news (26).txt",
+          "Marathi_fake_news/Marathi_fake_news (35).txt",
+          "Marathi_fake_news/Marathi_fake_news (36).txt",
+          "Marathi_fake_news/Marathi_fake_news (37).txt",
+          "Marathi_fake_news/Marathi_fake_news (38).txt",
+          "Marathi_fake_news/Marathi_fake_news (39).txt",
+          "Marathi_fake_news/Marathi_fake_news (40).txt",
+          "Marathi_fake_news/Marathi_fake_news (47).txt"
+        ]
+      },
+      {
+        "sha256": "de299eddbac51c197d8d1287e2ee11dbb385269b325323c8943e59a3d1da0d7b",
+        "count": 98,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Marathi_real_news/Marathi_real_news (3091).txt",
+          "Marathi_real_news/Marathi_real_news (3092).txt",
+          "Marathi_real_news/Marathi_real_news (3093).txt",
+          "Marathi_real_news/Marathi_real_news (3094).txt",
+          "Marathi_real_news/Marathi_real_news (3095).txt",
+          "Marathi_real_news/Marathi_real_news (3096).txt",
+          "Marathi_real_news/Marathi_real_news (3211).txt",
+          "Marathi_real_news/Marathi_real_news (3212).txt",
+          "Marathi_real_news/Marathi_real_news (3213).txt",
+          "Marathi_real_news/Marathi_real_news (3214).txt",
+          "Marathi_real_news/Marathi_real_news (3215).txt",
+          "Marathi_real_news/Marathi_real_news (3216).txt",
+          "Marathi_real_news/Marathi_real_news (3331).txt",
+          "Marathi_real_news/Marathi_real_news (3332).txt",
+          "Marathi_real_news/Marathi_real_news (3333).txt"
+        ]
+      },
+      {
+        "sha256": "b29592e7f128df5257bda01908b149bc0f5145a4fdf1f8834cb3852b3c8eab8c",
+        "count": 90,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Marathi_real_news/Marathi_real_news (7001).txt",
+          "Marathi_real_news/Marathi_real_news (7002).txt",
+          "Marathi_real_news/Marathi_real_news (7003).txt",
+          "Marathi_real_news/Marathi_real_news (7004).txt",
+          "Marathi_real_news/Marathi_real_news (7005).txt",
+          "Marathi_real_news/Marathi_real_news (7006).txt",
+          "Marathi_real_news/Marathi_real_news (7007).txt",
+          "Marathi_real_news/Marathi_real_news (7008).txt",
+          "Marathi_real_news/Marathi_real_news (7009).txt",
+          "Marathi_real_news/Marathi_real_news (7010).txt",
+          "Marathi_real_news/Marathi_real_news (7011).txt",
+          "Marathi_real_news/Marathi_real_news (7012).txt",
+          "Marathi_real_news/Marathi_real_news (7013).txt",
+          "Marathi_real_news/Marathi_real_news (7014).txt",
+          "Marathi_real_news/Marathi_real_news (7015).txt"
+        ]
+      },
+      {
+        "sha256": "444986bf1bf923d0f76bb426f1b6818341858aee872f3e52512d6cf38171c28b",
+        "count": 90,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Marathi_real_news/Marathi_real_news (7019).txt",
+          "Marathi_real_news/Marathi_real_news (7020).txt",
+          "Marathi_real_news/Marathi_real_news (7021).txt",
+          "Marathi_real_news/Marathi_real_news (7022).txt",
+          "Marathi_real_news/Marathi_real_news (7023).txt",
+          "Marathi_real_news/Marathi_real_news (7024).txt",
+          "Marathi_real_news/Marathi_real_news (7025).txt",
+          "Marathi_real_news/Marathi_real_news (7026).txt",
+          "Marathi_real_news/Marathi_real_news (7027).txt",
+          "Marathi_real_news/Marathi_real_news (7028).txt",
+          "Marathi_real_news/Marathi_real_news (7029).txt",
+          "Marathi_real_news/Marathi_real_news (7030).txt",
+          "Marathi_real_news/Marathi_real_news (7031).txt",
+          "Marathi_real_news/Marathi_real_news (7032).txt",
+          "Marathi_real_news/Marathi_real_news (7033).txt"
+        ]
+      },
+      {
+        "sha256": "2b12408333c111b457187727cb0c75265a0545bf78861fda0e18bd3c1c14730f",
+        "count": 90,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Marathi_real_news/Marathi_real_news (7037).txt",
+          "Marathi_real_news/Marathi_real_news (7038).txt",
+          "Marathi_real_news/Marathi_real_news (7039).txt",
+          "Marathi_real_news/Marathi_real_news (7040).txt",
+          "Marathi_real_news/Marathi_real_news (7041).txt",
+          "Marathi_real_news/Marathi_real_news (7042).txt",
+          "Marathi_real_news/Marathi_real_news (7043).txt",
+          "Marathi_real_news/Marathi_real_news (7044).txt",
+          "Marathi_real_news/Marathi_real_news (7045).txt",
+          "Marathi_real_news/Marathi_real_news (7046).txt",
+          "Marathi_real_news/Marathi_real_news (7047).txt",
+          "Marathi_real_news/Marathi_real_news (7048).txt",
+          "Marathi_real_news/Marathi_real_news (7049).txt",
+          "Marathi_real_news/Marathi_real_news (7050).txt",
+          "Marathi_real_news/Marathi_real_news (7051).txt"
+        ]
+      },
+      {
+        "sha256": "2626dc3c255fe87fc72c2e83326588454e4f6c340635a008625447ac0c415421",
+        "count": 90,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Marathi_real_news/Marathi_real_news (7055).txt",
+          "Marathi_real_news/Marathi_real_news (7056).txt",
+          "Marathi_real_news/Marathi_real_news (7057).txt",
+          "Marathi_real_news/Marathi_real_news (7058).txt",
+          "Marathi_real_news/Marathi_real_news (7059).txt",
+          "Marathi_real_news/Marathi_real_news (7060).txt",
+          "Marathi_real_news/Marathi_real_news (7061).txt",
+          "Marathi_real_news/Marathi_real_news (7062).txt",
+          "Marathi_real_news/Marathi_real_news (7063).txt",
+          "Marathi_real_news/Marathi_real_news (7064).txt",
+          "Marathi_real_news/Marathi_real_news (7065).txt",
+          "Marathi_real_news/Marathi_real_news (7066).txt",
+          "Marathi_real_news/Marathi_real_news (7067).txt",
+          "Marathi_real_news/Marathi_real_news (7068).txt",
+          "Marathi_real_news/Marathi_real_news (7069).txt"
+        ]
+      },
+      {
+        "sha256": "f1a9e617c81777f3baac90d42b519e9b38eff1b43c9a5b29b5a29c5c15c6fc7a",
+        "count": 90,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Marathi_real_news/Marathi_real_news (7073).txt",
+          "Marathi_real_news/Marathi_real_news (7074).txt",
+          "Marathi_real_news/Marathi_real_news (7075).txt",
+          "Marathi_real_news/Marathi_real_news (7076).txt",
+          "Marathi_real_news/Marathi_real_news (7077).txt",
+          "Marathi_real_news/Marathi_real_news (7078).txt",
+          "Marathi_real_news/Marathi_real_news (7079).txt",
+          "Marathi_real_news/Marathi_real_news (7080).txt",
+          "Marathi_real_news/Marathi_real_news (7081).txt",
+          "Marathi_real_news/Marathi_real_news (7082).txt",
+          "Marathi_real_news/Marathi_real_news (7083).txt",
+          "Marathi_real_news/Marathi_real_news (7084).txt",
+          "Marathi_real_news/Marathi_real_news (7085).txt",
+          "Marathi_real_news/Marathi_real_news (7086).txt",
+          "Marathi_real_news/Marathi_real_news (7087).txt"
+        ]
+      },
+      {
+        "sha256": "dc00878541528560ab785ca91a47b82ee4241c07af536c9ff8b4d912644f474b",
+        "count": 90,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Marathi_real_news/Marathi_real_news (7091).txt",
+          "Marathi_real_news/Marathi_real_news (7092).txt",
+          "Marathi_real_news/Marathi_real_news (7093).txt",
+          "Marathi_real_news/Marathi_real_news (7094).txt",
+          "Marathi_real_news/Marathi_real_news (7095).txt",
+          "Marathi_real_news/Marathi_real_news (7096).txt",
+          "Marathi_real_news/Marathi_real_news (7097).txt",
+          "Marathi_real_news/Marathi_real_news (7098).txt",
+          "Marathi_real_news/Marathi_real_news (7099).txt",
+          "Marathi_real_news/Marathi_real_news (7100).txt",
+          "Marathi_real_news/Marathi_real_news (7101).txt",
+          "Marathi_real_news/Marathi_real_news (7102).txt",
+          "Marathi_real_news/Marathi_real_news (7103).txt",
+          "Marathi_real_news/Marathi_real_news (7104).txt",
+          "Marathi_real_news/Marathi_real_news (7105).txt"
+        ]
+      },
+      {
+        "sha256": "43010f200fb738c9a6533a408df799a02ec992a20db6e11adba302ba55e7d092",
+        "count": 90,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Marathi_real_news/Marathi_real_news (7109).txt",
+          "Marathi_real_news/Marathi_real_news (7110).txt",
+          "Marathi_real_news/Marathi_real_news (7111).txt",
+          "Marathi_real_news/Marathi_real_news (7112).txt",
+          "Marathi_real_news/Marathi_real_news (7113).txt",
+          "Marathi_real_news/Marathi_real_news (7114).txt",
+          "Marathi_real_news/Marathi_real_news (7115).txt",
+          "Marathi_real_news/Marathi_real_news (7116).txt",
+          "Marathi_real_news/Marathi_real_news (7117).txt",
+          "Marathi_real_news/Marathi_real_news (7118).txt",
+          "Marathi_real_news/Marathi_real_news (7119).txt",
+          "Marathi_real_news/Marathi_real_news (7120).txt",
+          "Marathi_real_news/Marathi_real_news (7121).txt",
+          "Marathi_real_news/Marathi_real_news (7122).txt",
+          "Marathi_real_news/Marathi_real_news (7123).txt"
+        ]
+      },
+      {
+        "sha256": "291a3d23f80d3e374b1b5d7f0ea8c0b19c1ea64bcc65dfd21adc7ebf30766c81",
+        "count": 82,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Marathi_real_news/Marathi_real_news (7127).txt",
+          "Marathi_real_news/Marathi_real_news (7128).txt",
+          "Marathi_real_news/Marathi_real_news (7129).txt",
+          "Marathi_real_news/Marathi_real_news (7130).txt",
+          "Marathi_real_news/Marathi_real_news (7131).txt",
+          "Marathi_real_news/Marathi_real_news (7132).txt",
+          "Marathi_real_news/Marathi_real_news (7133).txt",
+          "Marathi_real_news/Marathi_real_news (7134).txt",
+          "Marathi_real_news/Marathi_real_news (7135).txt",
+          "Marathi_real_news/Marathi_real_news (7136).txt",
+          "Marathi_real_news/Marathi_real_news (7137).txt",
+          "Marathi_real_news/Marathi_real_news (7138).txt",
+          "Marathi_real_news/Marathi_real_news (7139).txt",
+          "Marathi_real_news/Marathi_real_news (7140).txt",
+          "Marathi_real_news/Marathi_real_news (7141).txt"
+        ]
+      },
+      {
+        "sha256": "4be37064486833e3c4b711e5228bea6687742205377fa189eeb77fd9109527ce",
+        "count": 72,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Marathi_real_news/Marathi_real_news (7145).txt",
+          "Marathi_real_news/Marathi_real_news (7146).txt",
+          "Marathi_real_news/Marathi_real_news (7147).txt",
+          "Marathi_real_news/Marathi_real_news (7148).txt",
+          "Marathi_real_news/Marathi_real_news (7149).txt",
+          "Marathi_real_news/Marathi_real_news (7150).txt",
+          "Marathi_real_news/Marathi_real_news (7151).txt",
+          "Marathi_real_news/Marathi_real_news (7152).txt",
+          "Marathi_real_news/Marathi_real_news (7153).txt",
+          "Marathi_real_news/Marathi_real_news (7154).txt",
+          "Marathi_real_news/Marathi_real_news (7155).txt",
+          "Marathi_real_news/Marathi_real_news (7156).txt",
+          "Marathi_real_news/Marathi_real_news (7157).txt",
+          "Marathi_real_news/Marathi_real_news (7158).txt",
+          "Marathi_real_news/Marathi_real_news (7159).txt"
+        ]
+      },
+      {
+        "sha256": "a14e0fd1bb95974816df8d6745e2e19152c076cdc8ee47a3f99c3c3815c8257e",
+        "count": 72,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Marathi_real_news/Marathi_real_news (7181).txt",
+          "Marathi_real_news/Marathi_real_news (7182).txt",
+          "Marathi_real_news/Marathi_real_news (7183).txt",
+          "Marathi_real_news/Marathi_real_news (7184).txt",
+          "Marathi_real_news/Marathi_real_news (7185).txt",
+          "Marathi_real_news/Marathi_real_news (7186).txt",
+          "Marathi_real_news/Marathi_real_news (7187).txt",
+          "Marathi_real_news/Marathi_real_news (7188).txt",
+          "Marathi_real_news/Marathi_real_news (7189).txt",
+          "Marathi_real_news/Marathi_real_news (7190).txt",
+          "Marathi_real_news/Marathi_real_news (7191).txt",
+          "Marathi_real_news/Marathi_real_news (7192).txt",
+          "Marathi_real_news/Marathi_real_news (7193).txt",
+          "Marathi_real_news/Marathi_real_news (7194).txt",
+          "Marathi_real_news/Marathi_real_news (7195).txt"
+        ]
+      },
+      {
+        "sha256": "681dd97c86d02e2c4edf5757d5686c00010bf898a41f0dabd8e1f11b3588f15c",
+        "count": 72,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Marathi_real_news/Marathi_real_news (7199).txt",
+          "Marathi_real_news/Marathi_real_news (7200).txt",
+          "Marathi_real_news/Marathi_real_news (7201).txt",
+          "Marathi_real_news/Marathi_real_news (7202).txt",
+          "Marathi_real_news/Marathi_real_news (7203).txt",
+          "Marathi_real_news/Marathi_real_news (7204).txt",
+          "Marathi_real_news/Marathi_real_news (7205).txt",
+          "Marathi_real_news/Marathi_real_news (7206).txt",
+          "Marathi_real_news/Marathi_real_news (7207).txt",
+          "Marathi_real_news/Marathi_real_news (7208).txt",
+          "Marathi_real_news/Marathi_real_news (7209).txt",
+          "Marathi_real_news/Marathi_real_news (7210).txt",
+          "Marathi_real_news/Marathi_real_news (7211).txt",
+          "Marathi_real_news/Marathi_real_news (7212).txt",
+          "Marathi_real_news/Marathi_real_news (7213).txt"
+        ]
+      },
+      {
+        "sha256": "768423c200cc5faf1854837bb03c65f2e65db5938588cdd4cc2afdcae8a0cefa",
+        "count": 54,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Marathi_real_news/Marathi_real_news (3001).txt",
+          "Marathi_real_news/Marathi_real_news (3002).txt",
+          "Marathi_real_news/Marathi_real_news (3003).txt",
+          "Marathi_real_news/Marathi_real_news (3004).txt",
+          "Marathi_real_news/Marathi_real_news (3005).txt",
+          "Marathi_real_news/Marathi_real_news (3006).txt",
+          "Marathi_real_news/Marathi_real_news (3121).txt",
+          "Marathi_real_news/Marathi_real_news (3122).txt",
+          "Marathi_real_news/Marathi_real_news (3123).txt",
+          "Marathi_real_news/Marathi_real_news (3124).txt",
+          "Marathi_real_news/Marathi_real_news (3125).txt",
+          "Marathi_real_news/Marathi_real_news (3126).txt",
+          "Marathi_real_news/Marathi_real_news (3241).txt",
+          "Marathi_real_news/Marathi_real_news (3242).txt",
+          "Marathi_real_news/Marathi_real_news (3243).txt"
+        ]
+      },
+      {
+        "sha256": "bca060bbae5ceb9da02766e084e7a501618d6bd0eaefc2bc45eb98083425974a",
+        "count": 54,
+        "labels": [
+          "real"
+        ],
+        "paths": [
+          "Marathi_real_news/Marathi_real_news (3007).txt",
+          "Marathi_real_news/Marathi_real_news (3008).txt",
+          "Marathi_real_news/Marathi_real_news (3009).txt",
+          "Marathi_real_news/Marathi_real_news (3010).txt",
+          "Marathi_real_news/Marathi_real_news (3011).txt",
+          "Marathi_real_news/Marathi_real_news (3012).txt",
+          "Marathi_real_news/Marathi_real_news (3127).txt",
+          "Marathi_real_news/Marathi_real_news (3128).txt",
+          "Marathi_real_news/Marathi_real_news (3129).txt",
+          "Marathi_real_news/Marathi_real_news (3130).txt",
+          "Marathi_real_news/Marathi_real_news (3131).txt",
+          "Marathi_real_news/Marathi_real_news (3132).txt",
+          "Marathi_real_news/Marathi_real_news (3247).txt",
+          "Marathi_real_news/Marathi_real_news (3248).txt",
+          "Marathi_real_news/Marathi_real_news (3249).txt"
+        ]
+      }
+    ],
+    "conflicting_label_groups": []
+  },
+  "issue_counts": {
+    "short": 341
+  }
+}

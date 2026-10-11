@@ -1,0 +1,10 @@
+# AI-Powered Fake News Detection - Environment Setup
+# Python 3.10+ standard library is used for dataset preparation, audit, and validation.
+# No external dependencies are required for running scripts/run_pipeline.py.
+
+# Future modeling baseline dependencies (optional):
+# numpy>=1.24.0
+# pandas>=2.0.0
+# scikit-learn>=1.2.0
+# torch>=2.0.0
+# transformers>=4.30.0

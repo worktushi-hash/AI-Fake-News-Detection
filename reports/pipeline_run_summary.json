@@ -1,0 +1,27 @@
+{
+  "english": {
+    "total_raw_rows": 72134,
+    "excluded_blank_text": 783,
+    "accepted_records": 62702,
+    "exact_duplicate_groups": 7731,
+    "extra_duplicate_copies_excluded": 8649
+  },
+  "hindi": {
+    "total_txt_files": 20593,
+    "quarantined_script_mismatch": 22,
+    "excluded_os_artifacts": 20595,
+    "accepted_records": 15038,
+    "exact_duplicate_groups": 2826,
+    "extra_duplicate_copies_excluded": 5529,
+    "quarantined_conflicting_labels": 4
+  },
+  "marathi": {
+    "total_txt_files": 18696,
+    "excluded_os_artifacts": 18698,
+    "accepted_records": 8122,
+    "exact_duplicate_groups": 1649,
+    "extra_duplicate_copies_excluded": 10574
+  },
+  "total_quarantined": 26,
+  "total_excluded": 64828
+}

@@ -1,26 +1,23 @@
-
-# Datasets: keep local until audited and licensing is confirmed
-data/raw/
-data/inspected/
-data/cleaned/
-
-# Python
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-
-# Secrets and local settings
-.env
-.env.*
-
-# Editor and OS files
-.vscode/
-.DS_Store
-
-# Keep original datasets local
+# Raw and generated datasets
 datasets/
 data/raw/
 data/inspected/
 data/cleaned/
 data/processed/
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Editor / OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

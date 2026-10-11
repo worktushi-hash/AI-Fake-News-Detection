@@ -1,0 +1,44 @@
+{
+  "validation_passed": true,
+  "datasets": [
+    {
+      "file": "processed\\english\\english_clean.jsonl",
+      "record_count": 62702,
+      "unique_ids": 62702,
+      "unique_texts": 62702,
+      "schema_violations": 0,
+      "duplicate_ids": 0,
+      "duplicate_texts": 0,
+      "empty_texts": 0,
+      "invalid_languages": 0,
+      "invalid_labels": 0,
+      "passed": true
+    },
+    {
+      "file": "processed\\hindi\\hindi_clean.jsonl",
+      "record_count": 15038,
+      "unique_ids": 15038,
+      "unique_texts": 15038,
+      "schema_violations": 0,
+      "duplicate_ids": 0,
+      "duplicate_texts": 0,
+      "empty_texts": 0,
+      "invalid_languages": 0,
+      "invalid_labels": 0,
+      "passed": true
+    },
+    {
+      "file": "processed\\marathi\\marathi_clean.jsonl",
+      "record_count": 8122,
+      "unique_ids": 8122,
+      "unique_texts": 8122,
+      "schema_violations": 0,
+      "duplicate_ids": 0,
+      "duplicate_texts": 0,
+      "empty_texts": 0,
+      "invalid_languages": 0,
+      "invalid_labels": 0,
+      "passed": true
+    }
+  ]
+}
