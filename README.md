@@ -6,7 +6,13 @@ A text-based fake news detection system and dataset package for English, Hindi, 
 
 ## Current Status: Final Dataset Preparation Complete
 
-The dataset cleaning, deduplication, quarantine, and validation pipeline is fully built and executed. All processed datasets follow a unified JSONL schema and are ready for model baselines.
+The dataset cleaning, deduplication, quarantine, automated validation, and **manual quality sample review** are complete. 
+
+> [!IMPORTANT]
+> **Ground-Truth & Provenance Status**:
+> - **WELFake Label Status**: Raw `0`/`1` labels are preserved as `source_label`. The label mapping remains marked as `unverified` due to Zenodo metadata documentation conflicts (`reports/welfake_label_mapping.md`).
+> - **Hindi & Marathi Provenance**: Upstream web URLs/DOIs are absent from raw directories; folder labels are documented as unverified `claimed_folder_label`.
+> - **Manual Sample Review**: Qualitative review of 30 sampled records is **complete** (`reports/manual_sample_review.md`). Uncovered website header boilerplate and fact-check debunker nuances.
 
 ---
 
@@ -14,7 +20,7 @@ The dataset cleaning, deduplication, quarantine, and validation pipeline is full
 
 Requirements: Standard Python 3.10+ library (no external third-party dependencies required for dataset preparation).
 
-Run tests, raw file integrity check, cleaning pipeline, automated validation, and report generation in a single command:
+Run tests, raw file integrity check, cleaning pipeline, automated validation, quality sample log generation, and report building in a single command:
 
 ```powershell
 python scripts/run_pipeline.py
@@ -35,7 +41,7 @@ python scripts/clean_dataset_pipeline.py
 # 4. Run automated validation checks
 python scripts/validate_processed_datasets.py
 
-# 5. Draw reproducible quality samples
+# 5. Draw reproducible quality sample log
 python scripts/sample_quality_review.py
 ```
 
@@ -76,10 +82,10 @@ Every clean record in `datasets/processed/<lang>/<lang>_clean.jsonl` adheres to 
 
 ## Key Data Quality Policies
 
-1. **Raw Data Inviolability**: Raw datasets under `datasets/raw/` are strictly read-only; pre- and post-run SHA-256 hashes are verified in `reports/raw_file_integrity.md`.
+1. **Raw Data Inviolability**: Raw datasets under `datasets/raw/` are strictly read-only; pre- and post-run SHA-256 hashes are verified against baseline in `reports/raw_file_integrity.md`.
 2. **Exact Deduplication**: Exactly 1 canonical record per identical NFC-normalized text is accepted. Duplicate copies are excluded.
 3. **Conflicting Label Quarantine**: Duplicate texts spanning multiple labels are routed to `datasets/quarantine/quarantined_records.jsonl`.
-4. **WELFake Label Status**: Raw `0`/`1` labels are preserved as `source_label`. The label mapping remains marked as `unverified` in accordance with Zenodo metadata conflict notes (`reports/welfake_label_mapping.md`).
+4. **WELFake Label Status**: Target labels remain marked as `unverified` (`reports/welfake_label_mapping.md`).
 
 ---
 
@@ -89,11 +95,10 @@ Every clean record in `datasets/processed/<lang>/<lang>_clean.jsonl` adheres to 
   - `scripts/`: Cleaning, audit, validation, and pipeline scripts.
   - `reports/`: Markdown and JSON audit/quality reports.
   - `tests/`: Automated unit and pipeline tests.
-  - `README.md`, `.gitignore`, `requirements.txt`
+  - `README.md`, `.gitignore`, `requirements.txt`.
 - **Gitignored Datasets**:
   - `datasets/raw/`: Raw files stay local.
-  - `datasets/processed/english/english_clean.jsonl` (219.7 MB) and `datasets/processed/hindi/hindi_clean.jsonl` (133.2 MB) exceed GitHub's standard 100 MB per-file limit.
-  - If committing processed datasets to remote repositories, enable **Git LFS** (`git lfs track "*.jsonl"`), or regenerate them on target environments by running `python scripts/run_pipeline.py`.
+  - `datasets/processed/`: Processed datasets (> 100 MB per file) stay local.
 
 ---
 
