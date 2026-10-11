@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # AI-Powered Fake News Detection for Regional Languages
 
 A project to investigate and develop a text-based fake news detection system for English, Hindi, and Marathi.
