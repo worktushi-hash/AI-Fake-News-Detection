@@ -17,3 +17,10 @@ venv/
 # Editor and OS files
 .vscode/
 .DS_Store
+
+# Keep original datasets local
+datasets/
+data/raw/
+data/inspected/
+data/cleaned/
+data/processed/
