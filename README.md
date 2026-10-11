@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # AI-Powered Fake News Detection for Regional Languages
 
