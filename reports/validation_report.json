@@ -1,0 +1,58 @@
+{
+  "status": "completed",
+  "validated_files": {
+    "liar\\liar_test_clean.jsonl": {
+      "record_count": 1283,
+      "valid_schema": true,
+      "issues": []
+    },
+    "liar\\liar_test_no_leakage_clean.jsonl": {
+      "record_count": 1283,
+      "valid_schema": true,
+      "issues": []
+    },
+    "liar\\liar_train_clean.jsonl": {
+      "record_count": 10246,
+      "valid_schema": true,
+      "issues": []
+    },
+    "liar\\liar_train_no_leakage_clean.jsonl": {
+      "record_count": 10237,
+      "valid_schema": true,
+      "issues": []
+    },
+    "liar\\liar_valid_clean.jsonl": {
+      "record_count": 1284,
+      "valid_schema": true,
+      "issues": []
+    },
+    "liar\\liar_valid_no_leakage_clean.jsonl": {
+      "record_count": 1284,
+      "valid_schema": true,
+      "issues": []
+    },
+    "marathi_headlines\\marathi_headlines_train_clean.jsonl": {
+      "record_count": 9643,
+      "valid_schema": true,
+      "issues": []
+    },
+    "marathi_headlines\\marathi_headlines_train_no_leakage_clean.jsonl": {
+      "record_count": 9640,
+      "valid_schema": true,
+      "issues": []
+    },
+    "marathi_headlines\\marathi_headlines_valid_clean.jsonl": {
+      "record_count": 2417,
+      "valid_schema": true,
+      "issues": []
+    },
+    "marathi_headlines\\marathi_headlines_valid_no_leakage_clean.jsonl": {
+      "record_count": 2415,
+      "valid_schema": true,
+      "issues": []
+    }
+  },
+  "passed": true,
+  "errors": [],
+  "warnings": []
+}

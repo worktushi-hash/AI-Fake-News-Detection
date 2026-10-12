@@ -1,0 +1,174 @@
+{
+  "samples": {
+    "liar\\liar_test_clean.jsonl": [
+      {
+        "id": "liar_011759",
+        "label": "mostly-true",
+        "text_snippet": "When it comes to income taxes, Wisconsin is one of the best places in the country to be poor but top"
+      },
+      {
+        "id": "liar_011582",
+        "label": "barely-true",
+        "text_snippet": "Hillary Clinton said gun confiscation would be worth considering."
+      },
+      {
+        "id": "liar_012094",
+        "label": "true",
+        "text_snippet": "Says he came to the Republican Party sooner in age than Ronald Reagan."
+      }
+    ],
+    "liar\\liar_test_no_leakage_clean.jsonl": [
+      {
+        "id": "liar_012032",
+        "label": "mostly-true",
+        "text_snippet": "In the city of Milwaukee, weve still got a mayor and a police chief who are furloughing police offic"
+      },
+      {
+        "id": "liar_011988",
+        "label": "half-true",
+        "text_snippet": "The Congressional Budget Office estimates that for every $1 we spend on unemployment benefits, $1.90"
+      },
+      {
+        "id": "liar_011816",
+        "label": "false",
+        "text_snippet": "Says House Democrats voted to use your tax dollars for abortions by voting against bill defunding Pl"
+      }
+    ],
+    "liar\\liar_train_clean.jsonl": [
+      {
+        "id": "liar_001680",
+        "label": "true",
+        "text_snippet": "Says he followed state law and the precedent of other Massachusetts governors when he erased electro"
+      },
+      {
+        "id": "liar_008936",
+        "label": "false",
+        "text_snippet": "The Congressional Budget Office -- supposedly non-partisan -- estimates that in just a few years the"
+      },
+      {
+        "id": "liar_001425",
+        "label": "barely-true",
+        "text_snippet": "Says Ted Cruz supports legalizing people who are in this country illegally."
+      }
+    ],
+    "liar\\liar_train_no_leakage_clean.jsonl": [
+      {
+        "id": "liar_009683",
+        "label": "half-true",
+        "text_snippet": "If Congress does not pass the renewal of the payroll tax cut before the end of the year, nearly 160 "
+      },
+      {
+        "id": "liar_006918",
+        "label": "false",
+        "text_snippet": "Slim Jims just recently cost 99 cents but now cost $2.69."
+      },
+      {
+        "id": "liar_000521",
+        "label": "false",
+        "text_snippet": "Mitt Romney is the first major party candidate for president of the United States in modern times no"
+      }
+    ],
+    "liar\\liar_valid_clean.jsonl": [
+      {
+        "id": "liar_010308",
+        "label": "half-true",
+        "text_snippet": "Says Essex County residents suffer the second highest property taxes in the nation."
+      },
+      {
+        "id": "liar_010438",
+        "label": "false",
+        "text_snippet": "Ezekiel Emanuel, one of President Obama's key health care advisers, says medical care should be rese"
+      },
+      {
+        "id": "liar_010694",
+        "label": "barely-true",
+        "text_snippet": "Says Ron Johnson justifies his support of trade agreements by saying the U.S. has the Trade Adjustme"
+      }
+    ],
+    "liar\\liar_valid_no_leakage_clean.jsonl": [
+      {
+        "id": "liar_010723",
+        "label": "mostly-true",
+        "text_snippet": "Americans havent had a raise in 15 years."
+      },
+      {
+        "id": "liar_011281",
+        "label": "true",
+        "text_snippet": "On opposition to earmarks"
+      },
+      {
+        "id": "liar_011479",
+        "label": "true",
+        "text_snippet": "Approximately 43 percent of all college grades today are As, an increase of 28 percentage points sin"
+      }
+    ],
+    "marathi_headlines\\marathi_headlines_train_clean.jsonl": [
+      {
+        "id": "mrh_000435",
+        "label": "entertainment",
+        "text_snippet": "प्रियांका-निकच्या लग्नासाठी पहा कोण कोण वऱ्हाडी पोचलेत!"
+      },
+      {
+        "id": "mrh_009196",
+        "label": "state",
+        "text_snippet": "महाराष्ट्राला येथेच्छ न्हाऊ घालणार्‍या पावसाची खान्देशकडे मात्र पाठ !"
+      },
+      {
+        "id": "mrh_003258",
+        "label": "entertainment",
+        "text_snippet": "आमिर खान,जया बच्चन यांच्या उपस्थितीत 'मामि'चं जंगी उद्घाटन"
+      }
+    ],
+    "marathi_headlines\\marathi_headlines_train_no_leakage_clean.jsonl": [
+      {
+        "id": "mrh_008932",
+        "label": "state",
+        "text_snippet": "पाणी मुरलं कुठे ?"
+      },
+      {
+        "id": "mrh_006876",
+        "label": "entertainment",
+        "text_snippet": "ब्रँड अँम्बेसेडर मकरंद"
+      },
+      {
+        "id": "mrh_003613",
+        "label": "state",
+        "text_snippet": "नाशिक : जंगलीबाबाने घातला लाखोंचा गंडा"
+      }
+    ],
+    "marathi_headlines\\marathi_headlines_valid_clean.jsonl": [
+      {
+        "id": "mrh_011483",
+        "label": "entertainment",
+        "text_snippet": "'मोह माया मनी'च्या निमित्ताने"
+      },
+      {
+        "id": "mrh_012057",
+        "label": "state",
+        "text_snippet": "सांगलीत मराठा आंदोलकांनी जाळल्या एसटी बस, पहा हा LIVE व्हिडिओ"
+      },
+      {
+        "id": "mrh_010783",
+        "label": "entertainment",
+        "text_snippet": "प्रिया वारियरची आयपीएलमध्ये एंट्री, 'या' टीमसोबत दिसणार"
+      }
+    ],
+    "marathi_headlines\\marathi_headlines_valid_no_leakage_clean.jsonl": [
+      {
+        "id": "mrh_009670",
+        "label": "state",
+        "text_snippet": "प्रेम, लग्न आणि हत्या ; गडचिरोलीत 5 वर्षांत 15 तरुणींचा बळी"
+      },
+      {
+        "id": "mrh_010297",
+        "label": "state",
+        "text_snippet": "पवारांनी माढाच्या आढाव्यासाठी बैठक बोलावली, समोरच झाला दोन गटात राडा"
+      },
+      {
+        "id": "mrh_011377",
+        "label": "entertainment",
+        "text_snippet": "नीतू सिंगच्या वाढदिवसाला आलियाला निमंत्रण"
+      }
+    ]
+  }
+}

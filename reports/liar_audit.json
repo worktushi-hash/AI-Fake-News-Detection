@@ -1,0 +1,504 @@
+{
+  "dataset": "LIAR",
+  "task": "english_political_statement_six_class_truthfulness",
+  "raw_dir": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\datasets\\raw\\liar",
+  "errors": [],
+  "warnings": [],
+  "input_files": {
+    "train.tsv": {
+      "split": "train",
+      "sha256": "23ef8cb7ff57b25c941100d0744039cebc595d65a67ea190f72b330a658d8c36",
+      "bytes": 2408165
+    },
+    "valid.tsv": {
+      "split": "valid",
+      "sha256": "8dd3d7ed1a11e78ed7df090c9eddb0f91147f895850c78d49dd7b4e88fd09a16",
+      "bytes": 301556
+    },
+    "test.tsv": {
+      "split": "test",
+      "sha256": "ee41e2c741e0019216952625145af8c4aa8c8d3057ec68284b134267bb845e6f",
+      "bytes": 301118
+    }
+  },
+  "detected_columns": {
+    "train.tsv": [
+      "statement_id",
+      "label",
+      "statement",
+      "subjects",
+      "speaker",
+      "speaker_job",
+      "state",
+      "party",
+      "barely_true_count",
+      "false_count",
+      "half_true_count",
+      "mostly_true_count",
+      "pants_fire_count",
+      "context"
+    ],
+    "valid.tsv": [
+      "statement_id",
+      "label",
+      "statement",
+      "subjects",
+      "speaker",
+      "speaker_job",
+      "state",
+      "party",
+      "barely_true_count",
+      "false_count",
+      "half_true_count",
+      "mostly_true_count",
+      "pants_fire_count",
+      "context"
+    ],
+    "test.tsv": [
+      "statement_id",
+      "label",
+      "statement",
+      "subjects",
+      "speaker",
+      "speaker_job",
+      "state",
+      "party",
+      "barely_true_count",
+      "false_count",
+      "half_true_count",
+      "mostly_true_count",
+      "pants_fire_count",
+      "context"
+    ]
+  },
+  "malformed_rows": {
+    "train.tsv": {
+      "count": 0,
+      "examples": []
+    },
+    "valid.tsv": {
+      "count": 0,
+      "examples": []
+    },
+    "test.tsv": {
+      "count": 0,
+      "examples": []
+    }
+  },
+  "text_normalization": "fnd_common.normalize_for_hash: whitespace collapsed to single spaces, then Unicode NFC; SHA-256 of the UTF-8 result is the duplicate key. Original text is stored unchanged in `text`; case, punctuation and diacritics are kept.",
+  "status": "completed",
+  "total_records_read": 12836,
+  "per_split": {
+    "train": {
+      "records_read": 10269,
+      "within_split_duplicate_groups": 16,
+      "within_split_duplicate_records": 33,
+      "quarantined_conflicting_labels": 12,
+      "within_split_conflicting_label_groups": 6,
+      "excluded_exact_duplicate": 11,
+      "records_retained": 10246,
+      "excluded_malformed": 0
+    },
+    "valid": {
+      "records_read": 1284,
+      "records_retained": 1284,
+      "excluded_malformed": 0
+    },
+    "test": {
+      "records_read": 1283,
+      "records_retained": 1283,
+      "excluded_malformed": 0
+    }
+  },
+  "totals": {
+    "records_read": 12836,
+    "within_split_duplicate_groups": 16,
+    "within_split_duplicate_records": 33,
+    "quarantined_conflicting_labels": 12,
+    "within_split_conflicting_label_groups": 6,
+    "excluded_exact_duplicate": 11,
+    "records_retained": 12813,
+    "excluded_malformed": 0
+  },
+  "missing_text_counts": {
+    "train": 0,
+    "valid": 0,
+    "test": 0
+  },
+  "label_distribution_raw": {
+    "train": {
+      "false": 1998,
+      "half-true": 2123,
+      "mostly-true": 1966,
+      "true": 1683,
+      "barely-true": 1657,
+      "pants-fire": 842
+    },
+    "valid": {
+      "barely-true": 237,
+      "pants-fire": 116,
+      "false": 263,
+      "half-true": 248,
+      "true": 169,
+      "mostly-true": 251
+    },
+    "test": {
+      "true": 211,
+      "false": 250,
+      "half-true": 267,
+      "pants-fire": 92,
+      "barely-true": 214,
+      "mostly-true": 249
+    }
+  },
+  "label_distribution_retained": {
+    "train": {
+      "false": 1988,
+      "half-true": 2116,
+      "mostly-true": 1965,
+      "true": 1679,
+      "barely-true": 1656,
+      "pants-fire": 842
+    },
+    "valid": {
+      "barely-true": 237,
+      "pants-fire": 116,
+      "false": 263,
+      "half-true": 248,
+      "true": 169,
+      "mostly-true": 251
+    },
+    "test": {
+      "true": 211,
+      "false": 250,
+      "half-true": 267,
+      "pants-fire": 92,
+      "barely-true": 214,
+      "mostly-true": 249
+    }
+  },
+  "invalid_label_counts": {},
+  "invalid_label_examples": [],
+  "duplicates": {
+    "within_split_groups": {
+      "train": 16,
+      "valid": 0,
+      "test": 0
+    },
+    "within_split_records_in_groups": {
+      "train": 33,
+      "valid": 0,
+      "test": 0
+    },
+    "within_split_conflicting_label_groups": {
+      "train": 6,
+      "valid": 0,
+      "test": 0
+    },
+    "exact_duplicate_records_excluded": {
+      "train": 11,
+      "valid": 0,
+      "test": 0
+    },
+    "groups_example_file": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\datasets\\processed\\liar\\liar_duplicate_groups.jsonl",
+    "cross_split": {
+      "groups_total": 9,
+      "pair_counts": {
+        "train__valid": 5,
+        "test__train": 4
+      },
+      "conflicting_label_groups": 0,
+      "examples": [
+        {
+          "hash_prefix": "425c90922a13",
+          "splits": {
+            "train": [
+              "6918.json"
+            ],
+            "valid": [
+              "6917.json"
+            ]
+          },
+          "labels": [
+            "false"
+          ]
+        },
+        {
+          "hash_prefix": "8591bdc145cf",
+          "splits": {
+            "train": [
+              "2519.json",
+              "1211.json"
+            ],
+            "test": [
+              "1093.json"
+            ]
+          },
+          "labels": [
+            "false"
+          ]
+        },
+        {
+          "hash_prefix": "547c7e61f3fe",
+          "splits": {
+            "train": [
+              "6622.json"
+            ],
+            "test": [
+              "6370.json"
+            ]
+          },
+          "labels": [
+            "true"
+          ]
+        },
+        {
+          "hash_prefix": "90936f1a1391",
+          "splits": {
+            "train": [
+              "11798.json"
+            ],
+            "valid": [
+              "5212.json"
+            ]
+          },
+          "labels": [
+            "false"
+          ]
+        },
+        {
+          "hash_prefix": "c740d3043762",
+          "splits": {
+            "train": [
+              "2517.json"
+            ],
+            "valid": [
+              "4435.json"
+            ]
+          },
+          "labels": [
+            "false"
+          ]
+        },
+        {
+          "hash_prefix": "c5016b03ab10",
+          "splits": {
+            "train": [
+              "601.json"
+            ],
+            "test": [
+              "609.json"
+            ]
+          },
+          "labels": [
+            "half-true"
+          ]
+        },
+        {
+          "hash_prefix": "43136fa13b5e",
+          "splits": {
+            "train": [
+              "10987.json"
+            ],
+            "test": [
+              "10917.json"
+            ]
+          },
+          "labels": [
+            "false"
+          ]
+        },
+        {
+          "hash_prefix": "eba9f9cc11ac",
+          "splits": {
+            "train": [
+              "3263.json"
+            ],
+            "valid": [
+              "2855.json"
+            ]
+          },
+          "labels": [
+            "false"
+          ]
+        },
+        {
+          "hash_prefix": "8d602c00f48e",
+          "splits": {
+            "train": [
+              "12055.json"
+            ],
+            "valid": [
+              "11898.json"
+            ]
+          },
+          "labels": [
+            "mostly-true"
+          ]
+        }
+      ],
+      "note": "Potential train/eval leakage in official benchmark splits. Flagged with cross_split_duplicate=true in *_clean.jsonl, and resolved completely in *_no_leakage_clean.jsonl."
+    },
+    "near_duplicate_analysis": "not performed; no approximate-similarity removal is applied"
+  },
+  "leakage_resolution": {
+    "policy": "1. Official benchmark splits are preserved in *_clean.jsonl with cross_split_duplicate=true flag.\n2. Zero-leakage training datasets (*_no_leakage_clean.jsonl) are generated where:\n   - Conflicting cross-split labels are quarantined.\n   - Same-label duplicates matching evaluation splits are excluded from train.",
+    "cross_split_groups_before": 9,
+    "cross_split_groups_after": 0,
+    "verification_passed": true,
+    "actions_taken": 9,
+    "resolution_log": [
+      {
+        "action": "excluded_from_train",
+        "split": "train",
+        "record_id": "liar_002593",
+        "source_record_id": "12055.json",
+        "text_sha256_prefix": "8d602c00f48e",
+        "eval_splits": [
+          "valid"
+        ]
+      },
+      {
+        "action": "excluded_from_train",
+        "split": "train",
+        "record_id": "liar_002877",
+        "source_record_id": "2519.json",
+        "text_sha256_prefix": "8591bdc145cf",
+        "eval_splits": [
+          "test"
+        ]
+      },
+      {
+        "action": "excluded_from_train",
+        "split": "train",
+        "record_id": "liar_003343",
+        "source_record_id": "11798.json",
+        "text_sha256_prefix": "90936f1a1391",
+        "eval_splits": [
+          "valid"
+        ]
+      },
+      {
+        "action": "excluded_from_train",
+        "split": "train",
+        "record_id": "liar_003389",
+        "source_record_id": "2517.json",
+        "text_sha256_prefix": "c740d3043762",
+        "eval_splits": [
+          "valid"
+        ]
+      },
+      {
+        "action": "excluded_from_train",
+        "split": "train",
+        "record_id": "liar_003485",
+        "source_record_id": "3263.json",
+        "text_sha256_prefix": "eba9f9cc11ac",
+        "eval_splits": [
+          "valid"
+        ]
+      },
+      {
+        "action": "excluded_from_train",
+        "split": "train",
+        "record_id": "liar_007009",
+        "source_record_id": "601.json",
+        "text_sha256_prefix": "c5016b03ab10",
+        "eval_splits": [
+          "test"
+        ]
+      },
+      {
+        "action": "excluded_from_train",
+        "split": "train",
+        "record_id": "liar_008295",
+        "source_record_id": "10987.json",
+        "text_sha256_prefix": "43136fa13b5e",
+        "eval_splits": [
+          "test"
+        ]
+      },
+      {
+        "action": "excluded_from_train",
+        "split": "train",
+        "record_id": "liar_009559",
+        "source_record_id": "6622.json",
+        "text_sha256_prefix": "547c7e61f3fe",
+        "eval_splits": [
+          "test"
+        ]
+      },
+      {
+        "action": "excluded_from_train",
+        "split": "train",
+        "record_id": "liar_010017",
+        "source_record_id": "6918.json",
+        "text_sha256_prefix": "425c90922a13",
+        "eval_splits": [
+          "valid"
+        ]
+      }
+    ],
+    "no_leakage_outputs": {
+      "train": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\datasets\\processed\\liar\\liar_train_no_leakage_clean.jsonl",
+      "valid": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\datasets\\processed\\liar\\liar_valid_no_leakage_clean.jsonl",
+      "test": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\datasets\\processed\\liar\\liar_test_no_leakage_clean.jsonl"
+    }
+  },
+  "records_retained": 12813,
+  "records_excluded": 11,
+  "records_quarantined": 12,
+  "accounting_balanced": true,
+  "exclusion_reasons": {
+    "exact_duplicate": 11
+  },
+  "cross_dataset_duplicates": {
+    "english": {
+      "status": "not_available_locally",
+      "path": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\datasets\\processed\\english\\english_clean.jsonl"
+    },
+    "hindi": {
+      "status": "not_available_locally",
+      "path": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\datasets\\processed\\hindi\\hindi_clean.jsonl"
+    },
+    "marathi": {
+      "status": "not_available_locally",
+      "path": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\datasets\\processed\\marathi\\marathi_clean.jsonl"
+    }
+  },
+  "outputs": {
+    "clean_by_split": {
+      "train": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\datasets\\processed\\liar\\liar_train_clean.jsonl",
+      "valid": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\datasets\\processed\\liar\\liar_valid_clean.jsonl",
+      "test": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\datasets\\processed\\liar\\liar_test_clean.jsonl"
+    },
+    "excluded": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\datasets\\processed\\liar\\liar_excluded.jsonl",
+    "duplicate_groups": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\datasets\\processed\\liar\\liar_duplicate_groups.jsonl",
+    "quarantine": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\datasets\\quarantine\\liar_quarantined.jsonl",
+    "report": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\reports\\liar_audit.json"
+  },
+  "suitability": {
+    "preprocessing": true,
+    "binary_fake_real_training": false,
+    "reason": "LIAR has six graded PolitiFact truthfulness labels on short political statements, not full articles. No binary mapping is applied; any mapping (e.g. how to treat half-true/barely-true/mostly-true) must be a separate, documented, explicitly approved decision.",
+    "suggested_task": "six-class (or approved-mapping) claim truthfulness classification"
+  },
+  "limitations": [
+    "Statements are short claims, not news articles; models trained here may not transfer to article-level detection.",
+    "Labels are PolitiFact editorial ratings, not independently re-verified here.",
+    "Dataset is English only and US-politics focused.",
+    "Speaker/credit-history metadata can leak label information; it is preserved under `metadata` but should be reviewed before use as features.",
+    "README states research-use-only, provided as-is; check licensing before redistribution.",
+    "Near-duplicate / paraphrase leakage was not analysed."
+  ],
+  "raw_files_modified": false,
+  "validation": {
+    "passed": true,
+    "problems": {},
+    "record_counts": {
+      "train": 10246,
+      "valid": 1284,
+      "test": 1283
+    }
+  }
+}

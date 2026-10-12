@@ -1,0 +1,297 @@
+{
+  "dataset": "Marathi headlines",
+  "task": "marathi_headline_topic_classification",
+  "raw_dir": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\datasets\\raw\\marathi_headlines",
+  "errors": [],
+  "warnings": [],
+  "input_files": {
+    "train.csv": {
+      "split": "train",
+      "sha256": "ee6aea1a0b25c5072d3dfb9615b7b4ec267da26b04f05b9e6d7b8d0349337382",
+      "bytes": 1438447
+    },
+    "valid.csv": {
+      "split": "valid",
+      "sha256": "afa24ac88bbc2af2b12cd38690b265615266153a85e9eba7d67b57fe4c32459f",
+      "bytes": 360007
+    }
+  },
+  "detected_columns": {
+    "train.csv": [
+      "headline",
+      "label"
+    ],
+    "valid.csv": [
+      "headline",
+      "label"
+    ]
+  },
+  "malformed_rows": {
+    "train.csv": {
+      "count": 0,
+      "examples": []
+    },
+    "valid.csv": {
+      "count": 0,
+      "examples": []
+    }
+  },
+  "text_normalization": "fnd_common.normalize_for_hash: whitespace collapsed to single spaces, then Unicode NFC; SHA-256 of the UTF-8 result is the duplicate key. Original text is stored unchanged in `text`; case, punctuation and diacritics are kept.",
+  "status": "completed",
+  "total_records_read": 12092,
+  "per_split": {
+    "train": {
+      "records_read": 9673,
+      "warning_low_devanagari_ratio_retained": 37,
+      "within_split_duplicate_groups": 15,
+      "within_split_duplicate_records": 30,
+      "quarantined_conflicting_labels": 30,
+      "within_split_conflicting_label_groups": 15,
+      "records_retained": 9643,
+      "excluded_malformed": 0
+    },
+    "valid": {
+      "records_read": 2419,
+      "warning_low_devanagari_ratio_retained": 12,
+      "within_split_duplicate_groups": 1,
+      "within_split_duplicate_records": 2,
+      "quarantined_conflicting_labels": 2,
+      "within_split_conflicting_label_groups": 1,
+      "records_retained": 2417,
+      "excluded_malformed": 0
+    }
+  },
+  "totals": {
+    "records_read": 12092,
+    "warning_low_devanagari_ratio_retained": 49,
+    "within_split_duplicate_groups": 16,
+    "within_split_duplicate_records": 32,
+    "quarantined_conflicting_labels": 32,
+    "within_split_conflicting_label_groups": 16,
+    "records_retained": 12060,
+    "excluded_malformed": 0
+  },
+  "missing_text_counts": {
+    "train": 0,
+    "valid": 0
+  },
+  "label_distribution_raw": {
+    "train": {
+      "state": 6035,
+      "entertainment": 2644,
+      "sports": 994
+    },
+    "valid": {
+      "entertainment": 679,
+      "state": 1512,
+      "sports": 228
+    }
+  },
+  "label_distribution_retained": {
+    "train": {
+      "state": 6023,
+      "entertainment": 2631,
+      "sports": 989
+    },
+    "valid": {
+      "entertainment": 678,
+      "state": 1511,
+      "sports": 228
+    }
+  },
+  "invalid_label_counts": {},
+  "invalid_label_examples": [],
+  "duplicates": {
+    "within_split_groups": {
+      "train": 15,
+      "valid": 1
+    },
+    "within_split_records_in_groups": {
+      "train": 30,
+      "valid": 2
+    },
+    "within_split_conflicting_label_groups": {
+      "train": 15,
+      "valid": 1
+    },
+    "exact_duplicate_records_excluded": {
+      "train": 0,
+      "valid": 0
+    },
+    "groups_example_file": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\datasets\\processed\\marathi_headlines\\marathi_headlines_duplicate_groups.jsonl",
+    "cross_split": {
+      "groups_total": 3,
+      "pair_counts": {
+        "train__valid": 3
+      },
+      "conflicting_label_groups": 2,
+      "examples": [
+        {
+          "hash_prefix": "148f0c279886",
+          "splits": {
+            "train": [
+              "train:line4249"
+            ],
+            "valid": [
+              "valid:line1482"
+            ]
+          },
+          "labels": [
+            "entertainment",
+            "state"
+          ]
+        },
+        {
+          "hash_prefix": "0251faad78b2",
+          "splits": {
+            "train": [
+              "train:line7511"
+            ],
+            "valid": [
+              "valid:line862"
+            ]
+          },
+          "labels": [
+            "entertainment",
+            "state"
+          ]
+        },
+        {
+          "hash_prefix": "02c70811e0a1",
+          "splits": {
+            "train": [
+              "train:line428"
+            ],
+            "valid": [
+              "valid:line1525"
+            ]
+          },
+          "labels": [
+            "sports"
+          ]
+        }
+      ],
+      "note": "Potential train/eval leakage in official benchmark splits. Flagged with cross_split_duplicate=true in *_clean.jsonl, and resolved completely in *_no_leakage_clean.jsonl."
+    },
+    "near_duplicate_analysis": "not performed; no approximate-similarity removal is applied"
+  },
+  "leakage_resolution": {
+    "policy": "1. Official benchmark splits are preserved in *_clean.jsonl with cross_split_duplicate=true flag.\n2. Zero-leakage training datasets (*_no_leakage_clean.jsonl) are generated where:\n   - Conflicting cross-split labels are quarantined.\n   - Same-label duplicates matching evaluation splits are excluded from train.",
+    "cross_split_groups_before": 3,
+    "cross_split_groups_after": 0,
+    "verification_passed": true,
+    "actions_taken": 5,
+    "resolution_log": [
+      {
+        "action": "excluded_from_train",
+        "split": "train",
+        "record_id": "mrh_000426",
+        "source_record_id": "train:line428",
+        "text_sha256_prefix": "02c70811e0a1",
+        "eval_splits": [
+          "valid"
+        ]
+      },
+      {
+        "action": "quarantined_conflicting_label",
+        "split": "train",
+        "record_id": "mrh_004236",
+        "source_record_id": "train:line4249",
+        "text_sha256_prefix": "148f0c279886",
+        "labels": [
+          "entertainment",
+          "state"
+        ]
+      },
+      {
+        "action": "quarantined_conflicting_label",
+        "split": "train",
+        "record_id": "mrh_007487",
+        "source_record_id": "train:line7511",
+        "text_sha256_prefix": "0251faad78b2",
+        "labels": [
+          "entertainment",
+          "state"
+        ]
+      },
+      {
+        "action": "quarantined_conflicting_label",
+        "split": "valid",
+        "record_id": "mrh_010504",
+        "source_record_id": "valid:line862",
+        "text_sha256_prefix": "0251faad78b2",
+        "labels": [
+          "entertainment",
+          "state"
+        ]
+      },
+      {
+        "action": "quarantined_conflicting_label",
+        "split": "valid",
+        "record_id": "mrh_011123",
+        "source_record_id": "valid:line1482",
+        "text_sha256_prefix": "148f0c279886",
+        "labels": [
+          "entertainment",
+          "state"
+        ]
+      }
+    ],
+    "no_leakage_outputs": {
+      "train": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\datasets\\processed\\marathi_headlines\\marathi_headlines_train_no_leakage_clean.jsonl",
+      "valid": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\datasets\\processed\\marathi_headlines\\marathi_headlines_valid_no_leakage_clean.jsonl"
+    }
+  },
+  "records_retained": 12060,
+  "records_excluded": 0,
+  "records_quarantined": 32,
+  "accounting_balanced": true,
+  "exclusion_reasons": {},
+  "cross_dataset_duplicates": {
+    "english": {
+      "status": "not_available_locally",
+      "path": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\datasets\\processed\\english\\english_clean.jsonl"
+    },
+    "hindi": {
+      "status": "not_available_locally",
+      "path": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\datasets\\processed\\hindi\\hindi_clean.jsonl"
+    },
+    "marathi": {
+      "status": "not_available_locally",
+      "path": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\datasets\\processed\\marathi\\marathi_clean.jsonl"
+    }
+  },
+  "outputs": {
+    "clean_by_split": {
+      "train": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\datasets\\processed\\marathi_headlines\\marathi_headlines_train_clean.jsonl",
+      "valid": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\datasets\\processed\\marathi_headlines\\marathi_headlines_valid_clean.jsonl"
+    },
+    "excluded": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\datasets\\processed\\marathi_headlines\\marathi_headlines_excluded.jsonl",
+    "duplicate_groups": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\datasets\\processed\\marathi_headlines\\marathi_headlines_duplicate_groups.jsonl",
+    "quarantine": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\datasets\\quarantine\\marathi_headlines_quarantined.jsonl",
+    "report": "C:\\Users\\Parth19\\Downloads\\liar_marathi_integration\\reports\\marathi_headlines_audit.json"
+  },
+  "suitability": {
+    "preprocessing": true,
+    "binary_fake_real_training": false,
+    "reason": "Labels are news TOPIC categories (e.g. state/entertainment/sports), not truthfulness. They must not be converted into Fake/Real. This is a Marathi topic-classification dataset.",
+    "suitability_for_veracity": "requires independently verified truthfulness labels"
+  },
+  "limitations": [
+    "Topic labels carry no information about whether a headline is true or false.",
+    "Headlines only; no article body, source, date, or URL provenance in the files.",
+    "Only train/valid splits are provided; no test split was created.",
+    "Class imbalance toward the `state` category.",
+    "Dataset is licensed for open academic/research use.",
+    "Near-duplicate / paraphrase leakage was not analysed; headline reuse across topics was only checked by exact normalized match."
+  ],
+  "raw_files_modified": false,
+  "validation": {
+    "passed": true,
+    "problems": {},
+    "record_counts": {
+      "train": 9643,
+      "valid": 2417
+    }
+  }
+}

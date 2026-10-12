@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "processed_binary_datasets": [],
+  "skipped": [
+    "Raw folder for 'english' not present.",
+    "Raw folder for 'hindi' not present.",
+    "Raw folder for 'marathi' not present."
+  ],
+  "warnings": [],
+  "errors": []
+}
